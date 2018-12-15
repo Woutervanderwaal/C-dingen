@@ -14,7 +14,7 @@ private:
 
 public:
 
-	Person(string name, int age){
+	Person(string name, int age) {
 		_name = name;
 		_age = age;
 	}
@@ -33,7 +33,7 @@ public:
 void Print(vector<Person> personList)
 {
 	for (vector<Person>::iterator it = personList.begin(); it != personList.end(); ++it)
-	{ 
+	{
 		cout << (*it).Name() << " " << (*it).Age() << endl;
 	}
 }
@@ -44,14 +44,14 @@ int main()
 
 	int a = 3;
 	Person p1("wouter", 16);
-	
+
 	string b = p1.Name();
 	int c = p1.Age();
 
 	Person p2("Henk", 73);
 	string d = p2.Name();
 
-	
+
 
 	vector<Person> personList;
 	personList.push_back(p1);
